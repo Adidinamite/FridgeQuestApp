@@ -1,7 +1,11 @@
 import Navbar from "../components/Navbar.jsx";
+import HomeSection from "../components/HomeSection.jsx";
 const HomePage = () =>{
     return(
-        <Navbar />
+        <>
+            <Navbar />
+            <HomeSection />
+        </>
     );
 };
 export default HomePage;
