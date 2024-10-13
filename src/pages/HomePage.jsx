@@ -1,8 +1,7 @@
+import Navbar from "../components/Navbar.jsx";
 const HomePage = () =>{
     return(
-        <h1>
-            Hello World!
-        </h1>
+        <Navbar />
     );
 };
 export default HomePage;
