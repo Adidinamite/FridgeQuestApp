@@ -9,7 +9,7 @@
     margin:0;
     padding:0;
 }
-body{
+body {
     min-height: 100vh;
     background-color: var(--backgroundColor);
     font-family: "Roboto", sans-serif;
