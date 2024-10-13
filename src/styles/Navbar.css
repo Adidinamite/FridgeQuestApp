@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    position: sticky;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.navbarLogo h1 {
+    font-size: 1.5rem;
+    color: var(--textColor);
+}
+
+.navbarLinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbarLinks a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbarLinks a:hover {
+    color: var(--accentColor);
+}
+
+.navbarToggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--textColor);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbarBurgerMenu {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .navbarLinks {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-color: var(--backgroundColor);
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+    }
+
+    .navbarLinks.Active {
+        display: flex;
+    }
+
+    .navbarToggle {
+        display: block;
+    }
+}
