@@ -1,7 +1,7 @@
 :root{
     --textColor: #f5effb;
     --backgroundColor: #10051e;
-    --primaryColor: rgba(184, 130, 235, 0.02);
+    --primaryColor: rgb(184, 130, 235);
     --secondaryColor: #87155a;
     --accentColor: #dd275f;
 }

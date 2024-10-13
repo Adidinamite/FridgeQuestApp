@@ -3,7 +3,7 @@ import '../styles/HomeSection.css';
 const HomeSection = () => {
     return (
             <section id="about" className="content">
-                <div className={"rightContainer"}>
+                <div className={"leftContainer"}>
                     <h1>
                         Do not know what to cook?
                     </h1>
@@ -18,7 +18,7 @@ const HomeSection = () => {
                         So, whether you are an experienced chef looking to experiment or a busy individual searching for a quick dinner solution, FridgeQuest is here to make cooking easier, more fun, and incredibly personalized!
                     </p>
                 </div>
-                <div className={"leftContainer"}>
+                <div className={"rightContainer"}>
                     <img src={"./images/fridgeQuest.png"} alt={"FridgeQuest"} />
                 </div>
             </section>
