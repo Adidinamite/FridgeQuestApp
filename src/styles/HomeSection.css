@@ -3,7 +3,7 @@
     display: flex;
     background-color: var(--backgroundColor);
 }
-.rightContainer {
+.leftContainer {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -14,24 +14,27 @@
     text-align: center;
 }
 
-.rightContainer p {
+.leftContainer p {
     padding: 1.5rem;
     font-size: 1.1rem;
-    background-color: var(--primaryColor);
+    background-color: rgba(184, 130, 235, 0.05);
     border-left: 4px solid var(--secondaryColor);
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.rightContainer h1{
-    font-size: 2rem;
+.leftContainer h1{
+    font-size: 3rem;
 }
-.leftContainer{
+.leftContainer h2{
+    font-size: 2.5rem;}
+
+.rightContainer{
     flex:1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.leftContainer img{
+.rightContainer img{
     width: 30rem;
     height: 30rem;
     border-radius: 1rem;

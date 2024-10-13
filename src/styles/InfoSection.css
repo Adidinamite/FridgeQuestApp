@@ -1,0 +1,48 @@
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.infoContainer h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--primaryColor);
+}
+
+.infoContainer ol {
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    list-style: none;
+}
+
+.infoContainer li {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(169, 22, 174, 0.37);
+    text-align: center;
+}
+.infoContainer li:nth-of-type(even){
+    background-color: var(--primaryColor);
+    color: var(--backgroundColor);
+}
+.infoContainer li:nth-of-type(odd){
+    background-color: var(--secondaryColor);
+    color: var(--backgroundColor);
+}
+
+.infoContainerItem span {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.infoContainerItem p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+
+}
