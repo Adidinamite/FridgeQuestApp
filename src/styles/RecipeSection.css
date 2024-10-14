@@ -1,0 +1,9 @@
+.recipeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--backgroundColor);
+    background-color: var(--primaryColor);
+    height: 60vh;
+}
