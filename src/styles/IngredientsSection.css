@@ -4,6 +4,7 @@
     align-items: center;
     padding: 10rem 2rem;
     background-color: var(--backgroundColor);
+    height: 60vh;
 }
 
 .ingredientsContainer h1 {
@@ -41,7 +42,6 @@
 }
 
 .ingredientsList {
-
     width: 100%;
     max-width: 20rem;
     display: flex;
