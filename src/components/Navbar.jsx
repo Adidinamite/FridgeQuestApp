@@ -13,7 +13,7 @@ const Navbar = () => {
                             <a href="/home" className={"menuLink"}>About</a>
                         </li>
                         <li className={"menuItem"}>
-                            <a href="/home" className={"menuLink"}>Recipes</a>
+                            <a href="/recipes" className={"menuLink"}>Recipes</a>
                         </li>
                     </ul>
                 </div>
