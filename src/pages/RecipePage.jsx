@@ -14,11 +14,12 @@ const RecipePage = () => {
         <>
             <Navbar/>
             <IngredientsSection
-                ingredientsList={ingredientsList}
                 addIngredient={addIngredient}
+            />
+            <RecipeSection
+                ingredientsList={ingredientsList}
                 deleteIngredient={deleteIngredient}
             />
-            <RecipeSection ingredientsList={ingredientsList} />
         </>
     );
 };
