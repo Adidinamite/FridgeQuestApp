@@ -1,14 +1,12 @@
 import { useState } from "react";
 import "../styles/IngredientsSection.css";
 
-const IngredientsSection = ({ ingredientsList, addIngredient, deleteIngredient }) => {
+const IngredientsSection = ({  addIngredient }) => {
     const [ingredient, setIngredient] = useState("");
-
 
     const handleInputChange = (event) => {
         setIngredient(event.target.value);
     };
-
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -17,18 +15,6 @@ const IngredientsSection = ({ ingredientsList, addIngredient, deleteIngredient }
             setIngredient("");
         }
     };
-    const renderIngredient = (item, index) => (
-        <li key={index} className="ingredientItem">
-            {item}
-            <button
-                onClick={() => deleteIngredient(index)}
-                className="deleteButton"
-                aria-label={`Delete ${item}`}
-            >
-                ✕
-            </button>
-        </li>
-    );
 
     return (
         <section className="ingredientsContainer">
@@ -46,11 +32,6 @@ const IngredientsSection = ({ ingredientsList, addIngredient, deleteIngredient }
                 />
                 <button type="submit">Add Ingredient</button>
             </form>
-            {ingredientsList.length > 0 && (
-                <ul className="ingredientsList" aria-live="polite">
-                    {ingredientsList.map(renderIngredient)}
-                </ul>
-            )}
         </section>
     );
 };
