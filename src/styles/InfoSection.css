@@ -13,11 +13,13 @@
     color: var(--primaryColor);
 }
 
+
 .infoContainer ol {
     display: flex;
     gap: 2rem;
     padding: 0;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .infoContainer li {
@@ -27,11 +29,13 @@
     box-shadow: 0 2px 5px rgba(169, 22, 174, 0.37);
     text-align: center;
 }
-.infoContainer li:nth-of-type(even){
+
+.infoContainer li:nth-of-type(even) {
     background-color: var(--primaryColor);
     color: var(--backgroundColor);
 }
-.infoContainer li:nth-of-type(odd){
+
+.infoContainer li:nth-of-type(odd) {
     background-color: var(--secondaryColor);
     color: var(--backgroundColor);
 }
@@ -44,5 +48,47 @@
 .infoContainerItem p {
     margin-top: 0.5rem;
     font-size: 1rem;
+}
 
+
+@media (max-width: 768px) {
+    .infoContainer h3 {
+        font-size: 1.75rem;
+    }
+
+    .infoContainer ol {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .infoContainer li {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .infoContainerItem span {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .infoContainer h3 {
+        font-size: 1.5rem;
+    }
+
+    .infoContainer ol {
+        gap: 1rem;
+    }
+
+    .infoContainer li {
+        padding: 0.75rem;
+    }
+
+    .infoContainerItem span {
+        font-size: 1rem;
+    }
+
+    .infoContainerItem p {
+        font-size: 0.9rem;
+    }
 }
