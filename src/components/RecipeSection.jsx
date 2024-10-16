@@ -1,8 +1,6 @@
 import { useState } from "react";
 import "../styles/RecipeSection.css";
 import MakeAPICall from "./MakeAPICall.jsx";
-import PropTypes from 'prop-types';
-
 
 const RecipeSection = ({ ingredientsList, deleteIngredient }) => {
     const [recipe, setRecipe] = useState("");
