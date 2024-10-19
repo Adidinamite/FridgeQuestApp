@@ -6,11 +6,11 @@
     padding: 2rem;
 }
 
-.infoContainer h3 {
+.infoContainer h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
-    color: var(--primaryColor);
+    color: var(--textColor);
 }
 
 
@@ -26,18 +26,18 @@
     flex: 1;
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(169, 22, 174, 0.37);
+    box-shadow: 0.1rem 0.3rem 0.4rem rgb(241, 229, 232);
     text-align: center;
 }
 
 .infoContainer li:nth-of-type(even) {
-    background-color: var(--primaryColor);
-    color: var(--backgroundColor);
+    background-color: rgba(184, 130, 235, 0.20);
+    color: var(--textColor);
 }
 
 .infoContainer li:nth-of-type(odd) {
-    background-color: var(--secondaryColor);
-    color: var(--backgroundColor);
+    background-color: rgba(135, 21, 90, 0.20);
+    color: var(--textColor);
 }
 
 .infoContainerItem span {

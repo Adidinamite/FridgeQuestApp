@@ -1,9 +1,10 @@
 {
   "name": "fridgequestapp",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "start": "node server.cjs",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -30,6 +31,7 @@
     "eslint-plugin-react-refresh": "^0.4.12",
     "globals": "^15.9.0",
     "nodemon": "^3.1.7",
+    "prettier": "3.3.3",
     "vite": "^5.4.8"
   }
 }

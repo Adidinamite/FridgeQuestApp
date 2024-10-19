@@ -1,26 +1,23 @@
-import Navbar from "../components/Navbar.jsx";
-import IngredientsSection from "../components/IngredientsSection.jsx";
-import RecipeSection from "../components/RecipeSection.jsx";
+import Navbar from "../components/Navbar/Navbar.jsx";
+import { IngredientsSection, RecipeSection} from "../components";
 import { useState } from "react";
 const RecipePage = () => {
     const [ingredientsList, setIngredientsList] = useState([]);
-    const addIngredient = (ingredient) => {
-        setIngredientsList([...ingredientsList, ingredient]);
-    };
-    const deleteIngredient = (index) => {
-        setIngredientsList(ingredientsList.filter((_, i) => i !== index));
-    };
-    return(
-        <>
-            <Navbar/>
-            <IngredientsSection
-                addIngredient={addIngredient}
-            />
-            <RecipeSection
-                ingredientsList={ingredientsList}
-                deleteIngredient={deleteIngredient}
-            />
-        </>
+    return (
+      <>
+        <Navbar />
+        <IngredientsSection
+          addIngredient={(ingredient) =>
+            setIngredientsList([...ingredientsList, ingredient])
+          }
+        />
+        <RecipeSection
+          ingredientsList={ingredientsList}
+          deleteIngredient={(index) =>
+            setIngredientsList(ingredientsList.filter((_, i) => i !== index))
+          }
+        />
+      </>
     );
 };
 export default RecipePage;

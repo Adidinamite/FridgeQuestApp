@@ -1,14 +1,16 @@
-:root{
+:root {
     --textColor: #f5effb;
     --backgroundColor: #10051e;
-    --primaryColor: rgb(184, 130, 235);
+    --primaryColor: #B882EBFF;
     --secondaryColor: #87155a;
     --accentColor: #dd275f;
 }
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
 }
+
 body {
     min-height: 100vh;
     background-color: var(--backgroundColor);

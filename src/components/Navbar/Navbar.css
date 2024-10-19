@@ -1,14 +1,18 @@
-li{
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--textColor);
 }
-a:hover{
-    color: var(--primaryColor);
+
+a:hover {
+    color: var(--accentColor);
 }
-nav{
+
+nav {
+    z-index: 10;
     position: fixed;
     left: 0;
     right: 0;
@@ -16,8 +20,8 @@ nav{
     padding: 1.5rem 0;
     box-shadow: 0 2px 5px rgba(144, 14, 209, 0.1);
 }
-.mainNav{
-    top:0;
+
+.mainNav {
     max-width: 1070px;
     margin: 0 auto;
     padding: 0 15px;
@@ -26,20 +30,24 @@ nav{
     justify-content: space-between;
     height: 1rem;
 }
-.logo{
+
+.logo {
     font-size: 1.2rem;
     font-weight: 800;
     color: var(--textColor);
 }
-.navbar{
+
+.navbar {
     display: flex;
 }
-.menuItem{
+
+.menuItem {
     padding: 0 5px;
 }
-.menuLinks{
+
+.menuLinks {
     font-size: 1rem;
     color: var(--textColor);
     padding: 0 0.5rem;
-    font-weight:300;
+    font-weight: 300;
 }
