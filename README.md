@@ -38,3 +38,7 @@ FridgeQuestApp is a user-friendly web application that helps you create deliciou
         ```
     - Replace `YOUR_API_KEY` with your ChatGPT API key.
     - Save the file and restart the React app.
+![preview1](https://github.com/aparaschiveiadrian/FridgeQuestApp/blob/99a502c5d5e95651901de1ec76708f106de4b48f/preview1.PNG)
+![preview2](https://github.com/aparaschiveiadrian/FridgeQuestApp/blob/99a502c5d5e95651901de1ec76708f106de4b48f/preview2.PNG)
+![preview3](https://github.com/aparaschiveiadrian/FridgeQuestApp/blob/99a502c5d5e95651901de1ec76708f106de4b48f/preview3.PNG)
+![preview4](https://github.com/aparaschiveiadrian/FridgeQuestApp/blob/99a502c5d5e95651901de1ec76708f106de4b48f/preview4.PNG)
