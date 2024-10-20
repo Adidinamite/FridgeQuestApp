@@ -18,25 +18,24 @@
     display: flex;
     gap: 2rem;
     padding: 0;
-    list-style: none;
     flex-wrap: wrap;
 }
 
 .infoContainer li {
     flex: 1;
     padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0.1rem 0.3rem 0.4rem rgb(241, 229, 232);
+    border-radius: 1rem;
+    box-shadow: inset 0 0 0.6rem 0.3rem rgb(0 0 0 / 14%);
     text-align: center;
 }
 
 .infoContainer li:nth-of-type(even) {
-    background-color: rgba(184, 130, 235, 0.20);
+    background-color: rgba(184, 130, 235, 0.10);
     color: var(--textColor);
 }
 
 .infoContainer li:nth-of-type(odd) {
-    background-color: rgba(135, 21, 90, 0.20);
+    background-color: rgba(135, 21, 90, 0.10);
     color: var(--textColor);
 }
 
